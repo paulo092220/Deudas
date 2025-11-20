@@ -1,0 +1,5 @@
+{
+  "name": "CobranzaPro",
+  "description": "Un gestor de deudas profesional para administrar clientes, productos y conversiones de divisas (CUP, USD, USDT, ZELLE) con asistencia de IA.",
+  "requestFramePermissions": []
+}

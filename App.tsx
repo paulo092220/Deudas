@@ -261,7 +261,7 @@ const App = () => {
         return {
             ...debt,
             remainingAmountCUP: newRemaining,
-            status: newRemaining <= 0.5 ? 'PAID' : 'PARTIAL',
+            status: (newRemaining <= 0.5 ? 'PAID' : 'PARTIAL') as 'PAID' | 'PARTIAL',
             payments: [newPayment, ...debt.payments]
         };
     });
@@ -292,7 +292,7 @@ const App = () => {
         if (qtyToPay > (d.remainingQuantity || 0)) return d;
 
         const newRemainingQty = (d.remainingQuantity || 0) - qtyToPay;
-        const status = newRemainingQty <= 0 ? 'PAID' : 'PARTIAL';
+        const status: 'PAID' | 'PARTIAL' = newRemainingQty <= 0 ? 'PAID' : 'PARTIAL';
         
         const paymentInCUP = invPaymentForm.amount * invPaymentForm.rate;
 

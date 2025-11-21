@@ -60,7 +60,7 @@ export interface Client {
   debts: Debt[];
 }
 
-export type ViewState = 'DASHBOARD' | 'CLIENT_LIST' | 'CLIENT_DETAIL' | 'SETTINGS';
+export type ViewState = 'DASHBOARD' | 'CLIENT_LIST' | 'CLIENT_DETAIL' | 'PRODUCTS';
 
 export interface AppState {
   clients: Client[];
